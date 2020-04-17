@@ -1,0 +1,53 @@
+{
+  "name": "share-it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "seeds": "node seeds",
+    "start": "ts-node-dev --respawn --transpileOnly app.ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
+  "author": "ShareIT",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dataloader": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "express-graphql": "^0.9.0",
+    "express-validator": "^5.3.1",
+    "graphql": "^15.0.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.3.15",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/graphql": "^14.5.0",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^13.1.1",
+    "@types/randomcolor": "^0.5.3",
+    "@types/sinon": "^7.0.11",
+    "@types/uniqid": "^4.1.3",
+    "@typescript-eslint/eslint-plugin": "2.17.0",
+    "@typescript-eslint/parser": "2.17.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.1",
+    "mongoose-seed": "^0.6.0",
+    "nodemon": "^1.18.7",
+    "prettier": "^2.0.4"
+  }
+}
